@@ -3,22 +3,22 @@ body {
   letter-spacing: 1px; }
 
 a {
-  color: #FF6347; }
+  color: #F74F8D; }
 
 p {
   color: #888; }
 
 i {
-  color: #FF6347; }
+  color: #F74F8D; }
 
 .color_element {
-  color: #FF6347; }
+  color: #F74F8D; }
 
 .color_bg {
-  background-color: #FF6347; }
+  background-color: #F74F8D; }
 
 .color_border {
-  border-color: #FF6347; }
+  border-color: #F74F8D; }
 
 svg {
   color: #fff;
@@ -28,7 +28,7 @@ svg {
   background-color: #222; }
 
 .top_mnu a:hover {
-  color: #FF6347;
+  color: #F74F8D;
   background-color: rgba(255, 255, 255, 0.05); }
 .top_mnu a {
   letter-spacing: 4px; }
@@ -65,7 +65,7 @@ svg {
   letter-spacing: 2px; }
 
 .resume_content .year {
-  background-color: #FF6347;
+  background-color: #F74F8D;
   color: #fff; }
 .resume_content .place {
   letter-spacing: 0px; }
@@ -75,7 +75,7 @@ svg {
   letter-spacing: 3px; }
 .s_portfolio li.active {
   color: #fff;
-  border-bottom: 1px solid #FF6347; }
+  border-bottom: 1px solid #F74F8D; }
 
 .protfolio_descr h3 {
   text-transform: uppercase;
@@ -87,6 +87,6 @@ svg {
   text-align: center;
   color: #888; }
 .protfolio_descr .view {
-  border-color: #FF6347; }
+  border-color: #F74F8D; }
 
-/*# sourceMappingURL=tomato.css.map */
+/*# sourceMappingURL=pink.css.map */

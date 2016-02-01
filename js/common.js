@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+	$("#filter_container").mixItUp();
+
+	$(".s_portfolio li").click(function() {
+		$(".s_portfolio li").removeClass("active");
+		$(this).addClass("active")
+	});
+
+	$('.view').magnificPopup({
+	  type:'inline',
+	  midClick: true
+	});
+
 	$(".popup").magnificPopup({type:"image"});
 
 	$(".name").animated("fadeInDown", "fadeOutUp");
@@ -34,9 +46,13 @@ $(document).ready(function() {
 			$(".top_mnu").fadeIn(600);
 		}
 	});
-	
+		
+	$(".portfolio_item").each(function(i) {
+		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find(".port_descr").attr("id", "work_" + i);
+	});
 
-
+	$("input,textarea").jqBootstrapValidation();
 	
 });
 
