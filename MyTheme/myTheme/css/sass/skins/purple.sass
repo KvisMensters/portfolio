@@ -1,0 +1,106 @@
+@import "../bourbon/_bourbon"
+
+$color: #C44FDB //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+$toggle_color: #88D8F2
+$bg_silver: #DADADA
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p
+	color: $text_color
+
+i
+	color: $color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+	
+svg
+	color: #fff
+	path
+	fill: $main_color
+
+.toggle_menu
+	background-color: $main_color
+
+.top_mnu
+	a:hover
+		color: $color
+		background-color: rgba(255,255,255,.05)
+	a
+		+kerning(4)
+
+.top_wrapper
+	p
+		+kerning(4)
+
+.bg_light
+	background-color: $bg_light
+.bg_dark
+	background-color: $main_color
+	color: white
+	.s_descr::after
+		background-color: #FFF
+.bg_silver
+	background-color: $bg_silver
+
+.s_descr
+	+kerning(4)
+	&::after
+		background-color: $main_color
+
+.main_footer
+	+kerning(0)
+
+.c_about,.c_photo,.c_info
+	h3
+		+kerning(3)
+		font-size: 16px
+		text-transform: uppercase
+
+.resume_content
+	h3
+		+kerning(2)
+
+.resume_content
+	.year
+		background-color: $color
+		color: #fff
+	.place
+		+kerning(0)
+
+.s_portfolio
+	li
+		color: $text_color
+		+kerning(3)
+	li.active
+		color: #fff
+		border-bottom: 1px solid $color
+
+.protfolio_descr
+	h3
+		text-transform: uppercase
+		text-align: center
+		color: $text_color
+		+kerning(3)
+		font-size: 15px
+	p
+		text-align: center
+		color: $text_color
+	.view
+		border-color: $color
